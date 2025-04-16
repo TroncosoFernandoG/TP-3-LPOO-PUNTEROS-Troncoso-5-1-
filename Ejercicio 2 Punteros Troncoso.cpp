@@ -10,21 +10,21 @@ Troncoso Fernando G 5°1°
 int i;
 int n;
 
-void prom(int a[], int *prome);
+void prom(float a[], float *prome);
 
 int main(){
 	
 	printf("ingrese la cantidad de numeros que tiene el arreglo\n");
 	scanf("%d", &n);
 	
-	int arr[n];
+	float arr[n];
 	
 	for(i=0;i<n;i++){
 		printf("ingrese el numero en el espacio %d\n",i+1);
-		scanf("%d", &arr[i]);
+		scanf("%f", &arr[i]);
 	}
 	
-	int prome=0;
+	float prome=0;
 	
 	prom(arr, &prome);
 	
@@ -33,19 +33,19 @@ int main(){
 	
 }
 
-void prom(int a[], int *prome){
+void prom(float a[], float *prome){
 	
-	int acum=0;
+	float acum=0;
 	
 	for(i=0;i<n;i++){
 		
 		acum+=a[i];
 	}
 	
-	printf("la sumatoria de los elementos del arreglo es = %d\n", acum);
+	printf("la sumatoria de los elementos del arreglo es = %f\n", acum);
 	
 	*prome = acum / n;
 	
-	printf("el valor del promedio del arreglo es = %d", *prome);
+	printf("el valor del promedio del arreglo es = %f", *prome);
 	
 }
