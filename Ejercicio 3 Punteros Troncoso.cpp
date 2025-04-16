@@ -2,7 +2,7 @@
 3. Encontrar el mayor y el menor elemento de un arreglo usando punteros y
 funciones.
 
-Troncoso Fernando G 5°1°
+Troncoso Fernando G 5Â°1Â°
 */
 
 #include <stdio.h>
@@ -40,7 +40,7 @@ void elemento(int a[], int *mayor, int *menor){
     *mayor = a[0];
     *menor = a[0];
 
-    for(i = 1; i < n; i++){
+    for(i=1;i<n;i++){
         if(a[i] > *mayor){
             *mayor = a[i];
         }
