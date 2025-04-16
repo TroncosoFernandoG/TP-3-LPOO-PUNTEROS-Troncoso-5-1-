@@ -8,7 +8,7 @@ Troncoso Fernando G 5°1°
 #include <stdio.h>
 
 int i;
-int n=0;
+int n;
 
 void prom(int a[], int *prome);
 
