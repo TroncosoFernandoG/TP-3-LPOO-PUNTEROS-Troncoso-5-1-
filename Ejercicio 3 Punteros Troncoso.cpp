@@ -10,7 +10,7 @@ Troncoso Fernando G 5°1°
 int n;
 int i;
 
-void elemento(int a[], int *mayor, int *menor);
+void mayorYmenor(int a[], int *mayor, int *menor);
 
 
 int main()
@@ -27,7 +27,7 @@ int main()
 		scanf("%d", &arr[i]);
 	}
 
-    elemento(arr, &mayor, &menor);
+    mayorYmenor(arr, &mayor, &menor);
 
     printf("El mayor elemento es: \'%d\' \n", mayor);
     printf("El menor elemento es: \'%d\' \n", menor);
@@ -35,7 +35,7 @@ int main()
     return 0;
 }
 
-void elemento(int a[], int *mayor, int *menor){
+void mayorYmenor(int a[], int *mayor, int *menor){
    
     *mayor = a[0];
     *menor = a[0];
