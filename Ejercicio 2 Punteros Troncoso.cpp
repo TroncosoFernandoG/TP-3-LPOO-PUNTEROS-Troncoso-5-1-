@@ -2,51 +2,50 @@
 2. Encontrar la suma y el promedio de los elementos de un arreglo usando
 punteros y funciones.
 
-Troncoso Fernando G 5°1°
+Troncoso Fernando G 5Â°1Â°
 */
 
 #include <stdio.h>
 
-void prom(int, int);
+int i;
+int n=0;
+
+void prom(int a[], int *prome);
 
 int main(){
 	
-	int n;
 	printf("ingrese la cantidad de numeros que tiene el arreglo\n");
 	scanf("%d", &n);
 	
 	int arr[n];
 	
-	for(int i=0;i<n;i++){
+	for(i=0;i<n;i++){
 		printf("ingrese el numero en el espacio %d\n",i+1);
 		scanf("%d", &arr[i]);
 	}
-	int acum=0;
 	
-		for(int i=0;i<n;i++){
-		acum+=arr[i];
-	}
+	int prome=0;
 	
-		printf("la suma de todos los elementos del arreglo es %d\n", acum);
-	prom(n, acum);
+	prom(arr, &prome);
 	
-
 	
-return 0;
+	return 0;
 	
 }
 
-void prom(int a, int b){
+void prom(int a[], int *prome){
 	
-	int *loc;
+	int acum=0;
 	
-	int c;
+	for(i=0;i<n;i++){
+		
+		acum+=a[i];
+	}
 	
-	loc=&c;
+	printf("la sumatoria de los elementos del arreglo es = %d\n", acum);
 	
-	*loc=b/a;
-
-
-printf("el promedio es %d\n", c);
-
+	*prome = acum / n;
+	
+	printf("el valor del promedio del arreglo es = %d", *prome);
+	
 }
